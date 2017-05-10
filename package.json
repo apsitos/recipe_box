@@ -37,6 +37,9 @@
     "webpack-dev-server": "^2.4.5"
   },
   "dependencies": {
+    "express": "^4.15.2",
+    "knex": "^0.13.0",
+    "pg": "^6.1.5",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   }
