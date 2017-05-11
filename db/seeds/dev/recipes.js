@@ -4,24 +4,24 @@ exports.seed = function(knex, Promise) {
   .then(() => {
     return Promise.all([
       knex('recipes').insert({
-        title: 'books',
-        author: 'they might be useful',
-        url: 'Dusty',
-        notes: '',
+        title: 'Dal',
+        author: 'Smitten Kitchen',
+        url: 'www.smittenkitchen.com',
+        notes: 'tasty, lentils never got really soft',
         created_at: new Date
       }),
       knex('recipes').insert({
-        title: 'skis',
-        author: 'Joe left them',
-        url: 'Dusty',
-        notes: '',
+        title: 'bread',
+        author: 'King Arthur Flour',
+        url: 'www.kingarthurflour.com',
+        notes: 'Be sure to let cool completely',
         created_at: new Date
       }),
       knex('recipes').insert({
-        title: 'bike',
-        author: 'blown tube',
-        url: 'Sparkling',
-        notes: '',
+        title: 'oatmeal chocolate chip cookies',
+        author: 'King Arthur Flour',
+        url: 'www.kingarthurflour.com',
+        notes: 'Many adjustments need to be made. More oatmeal, add spices',
         created_at: new Date
       })
     ]);

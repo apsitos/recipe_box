@@ -1,1 +1,11 @@
-//this will hold the information for each recipe
+import React from 'react';
+
+export default class Card extends React.Component {
+  render() {
+    return(
+      <div>
+        Recipes here!
+      </div>
+    )
+  }
+}
