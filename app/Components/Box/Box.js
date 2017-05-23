@@ -6,6 +6,10 @@ export default class Box extends React.Component {
     super();
   }
 
+  showRecipes() {
+    
+  }
+
   render() {
     return(
       <div>
