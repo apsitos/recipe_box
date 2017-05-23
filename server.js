@@ -17,8 +17,8 @@ app.use(function(req, res, next) {
 });
 
 app.set('port', process.env.PORT || 3000);
-app.use(express.static('public'));
 app.locals.title = 'Recipe Box'
+app.use(express.static('public'));
 
 app.get('/', (request, response) => {
   fs.readFile(`${__dirname}/index.html`, (err, file) => {
@@ -29,7 +29,7 @@ app.get('/', (request, response) => {
 app.get('/api/v1/recipes', (request, response) => {
   database('recipes').select()
     .then((recipes) => {
-      response.status(200).json(recipes)
+      response.status(200).json(recipes);
     })
     .catch((error) => {
       console.log('Something is wrong with the database', error);
