@@ -36,6 +36,21 @@ app.get('/api/v1/recipes', (request, response) => {
     })
 });
 
+app.post('/api/v1/recipes', (request, response) => {
+  const { title, author, url, notes } = request.body
+  const recipe = { title, author, url, notes, created_at: new Date }
+  database('recipes').insert(recipe)
+  .then(() => {
+    database('recipes').select()
+    .then(recipes => {
+      response.statsu(200).json(recipes)
+    })
+    .catch(error => {
+      console.error('Something went wrong with saving the recipe');
+    })
+  })
+})
+
 app.listen(app.get('port'), ()=>{
   console.log(`${app.locals.title} is running at ${app.get('port')}`)
 })
