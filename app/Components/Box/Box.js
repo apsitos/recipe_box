@@ -1,19 +1,23 @@
 import React from 'react';
-import Card from '../Card/Card';
 
 export default class Box extends React.Component {
-  constructor() {
-    super();
-  }
 
   showRecipes() {
-    
+    return this.props.recipes.map(recipe => {
+      return(
+        <div key={recipe.id}>
+          <h1>{recipe.title}</h1>
+          <h2>{recipe.author}</h2>
+          <p>{recipe.notes}</p>
+        </div>
+      )
+    })
   }
 
   render() {
     return(
       <div>
-        <Card />
+        {this.showRecipes()}
       </div>
     )
   }

@@ -12,9 +12,9 @@ export default class Main extends React.Component {
   }
 
   getRecipes() {
-    axios.get('/api/v1/recipes', {})
+    axios.get('http://localhost:3000/api/v1/recipes', {})
       .then(response => {
-        console.log(response)
+        this.setState({ recipes: response.data })
       })
   }
 
@@ -23,7 +23,7 @@ export default class Main extends React.Component {
       <div>
         <Header />
         {this.getRecipes()}
-        <Box />
+        <Box recipes={this.state.recipes}/>
       </div>
     )
   }
