@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import Header from '../Header/Header';
 import Box from '../Box/Box';
+import Add_Recipe from '../Add_Recipe/Add_Recipe'
 import '../../reset.css';
 import '../../styles.css';
 
