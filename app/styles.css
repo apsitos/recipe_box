@@ -1,9 +1,9 @@
 body {
   background-color: floralwhite;
+  font-family: 'Handlee', cursive;
 }
 
 .Header {
-  font-family: 'Handlee', cursive;
   font-size: 48px;
   text-align: center;
   padding-top: 25px;
@@ -28,13 +28,17 @@ a:hover, :visited {
 
 .recipe_title {
   font-family: 'Montez', cursive;
-  font-size: 32px;
+  font-size: 42px;
+  padding-left: 20px;
 }
 
 .recipe_author {
-
+  font-family: 'Montez', cursive;
+  font-size: 28px;
+  padding: 5px;
 }
 
 .recipe_notes {
-
+  font-size: 24px;
+  padding: 5px;
 }
