@@ -6,4 +6,4 @@ Created after graduation from the Turing School's Front End Engineering program.
 
 This app is not externally hosted.
 
-![Screen Shot]()
+![Screen Shot](https://github.com/apsitos/recipe_box/blob/master/ScreenShot.png)
