@@ -1,0 +1,40 @@
+body {
+  background-color: floralwhite;
+}
+
+.Header {
+  font-family: 'Handlee', cursive;
+  font-size: 48px;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: rebeccapurple;
+}
+
+a:hover, :visited {
+  color: fuchsia;
+}
+
+.recipe_card {
+  border: 1px dashed darkcyan;
+  background-color: cornsilk;
+  margin: 12px;
+  padding: 5px;
+}
+
+.recipe_title {
+  font-family: 'Montez', cursive;
+  font-size: 32px;
+}
+
+.recipe_author {
+
+}
+
+.recipe_notes {
+
+}
