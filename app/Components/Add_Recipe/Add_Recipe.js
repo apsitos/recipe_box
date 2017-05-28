@@ -3,14 +3,15 @@ import axios from 'axios';
 
 export default class Add_Recipe extends Component {
 
-  // addRecipe() {
+  addRecipe() {
+    // console.log(e.target.value);
   //   axios.post('http://localhost:3000/api/v1/recipes', {
   //     title: ,
   //     author: ,
   //     url: ,
   //     notes:
   //   })
-  // }
+  }
 
   render () {
     return (
@@ -19,6 +20,7 @@ export default class Add_Recipe extends Component {
         <input id="author" type="text" placeholder="Recipe Author" />
         <input id="url" type="text" placeholder="URL" />
         <input id="notes" type="text" placeholder="Cooking Notes" />
+        <button onClick={this.addRecipe()}>Save Recipe</button>
       </div>
     )
   }

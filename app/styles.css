@@ -27,6 +27,18 @@ input:focus {
   outline-color: fuchsia;
 }
 
+button {
+  background-color: darkcyan;
+  height: 32px;
+  width: 150px;
+  margin-left: 15px;
+  font-family: 'Montez', cursive;
+  font-size: 24px;
+  color: lightcyan;
+  border: none;
+  border-radius: 10%;
+}
+
 a {
   text-decoration: none;
   color: rebeccapurple;
