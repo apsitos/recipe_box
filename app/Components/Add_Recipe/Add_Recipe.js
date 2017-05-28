@@ -14,7 +14,12 @@ export default class Add_Recipe extends Component {
 
   render () {
     return (
-
+      <div id="new_recipe">
+        <input id="title" type="text" placeholder="Recipe Title" />
+        <input id="author" type="text" placeholder="Recipe Author" />
+        <input id="url" type="text" placeholder="URL" />
+        <input id="notes" type="text" placeholder="Cooking Notes" />
+      </div>
     )
   }
 }
