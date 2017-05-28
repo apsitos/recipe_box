@@ -25,6 +25,7 @@ export default class Main extends React.Component {
     return(
       <div>
         <Header />
+        <Add_Recipe />
         {this.getRecipes()}
         <Box recipes={this.state.recipes}/>
       </div>
