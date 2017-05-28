@@ -37,6 +37,7 @@ app.get('/api/v1/recipes', (request, response) => {
 });
 
 app.post('/api/v1/recipes', (request, response) => {
+  console.log(request.body);
   const { title, author, url, notes } = request.body
   const recipe = { title, author, url, notes, created_at: new Date }
   database('recipes').insert(recipe)
